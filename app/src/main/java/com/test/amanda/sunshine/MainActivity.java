@@ -73,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+        public View onCreateView (LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
@@ -115,6 +115,7 @@ public class MainActivity extends ActionBarActivity {
                     return null;
                 }
                 reader = new BufferedReader(new InputStreamReader(inputStream));
+
 
                 String line;
                 while ((line = reader.readLine()) != null) {
